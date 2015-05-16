@@ -1,0 +1,181 @@
+/*---------RESET-------------*/
+
+html,body,div,span,h1,h2,h3,p,em,img,
+ol,ul,li,fieldset,form,label,article,aside,footer,header,menu,nav,section,
+{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;
+  background:transparent}
+body{line-height:1}
+article,aside,footer,header,menu,nav,section{display:block}
+nav ul{list-style:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+
+
+/*----------BASE------------*/
+
+html {
+  max-width: 355px;
+  min-width: 330px;
+  margin: 0 auto;
+  margin-top: 15px;
+  position: relative;
+}
+body{
+  background-image: url("http://i.imgur.com/X75NWg5.png");
+  background-repeat: no-repeat;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+}
+h1{
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-top: 75px;
+  margin-bottom: 32px;
+}
+ul {
+  list-style: none;
+  margin-top: 1px;
+
+}
+li{
+  font-size: 22px;
+  line-height: 46px;
+}
+/*----------HEADER------------*/
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.flex-item-1 {
+  width: 190px;
+  height: 50px;
+}
+.flex-item-2 {
+  width: 50px;
+  height: 50px;
+}
+.plusbutton{
+  text-align: center;
+  vertical-align: center;
+  line-height: 55px;
+  padding-left: 10px;
+  border-left: thin solid white;
+  margin-top: 55px;
+  font-size: 32px;
+}
+.plusbutton:hover{
+  color: #99ccff;
+}
+
+
+/*---------- THE LIST------------*/
+.scroll {
+    width: 320px;
+    height: 300px;
+    overflow: scroll;
+}
+#newTask{
+  width: 300px;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 25px;
+}
+.list__box {
+  width: 24px;
+  height: 19px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.edit__list{
+  line-height: 20px;
+  border: 1px dashed #AAA;
+  width: 200px;
+  padding: 5px;
+  display: inline-block;
+  position:relative;
+  font-size: 16px;
+}
+[contenteditable="true"].edit__list:focus {
+  line-height: 20px;
+  border: 1px dashed #AAA;
+  width: 200px;
+  padding: 5px;
+  display: inline-block;
+  position:relative
+}
+[contenteditable="true"].edit__list br {
+        display:none;
+}
+[contenteditable="true"].edit__list * {
+        display:inline;
+        white-space:nowrap;
+}
+.delete{
+  height: 20px;
+  width: 20px;
+  padding:5px;
+  font-size: 14px;
+  font-family: arial;
+  display:inline-block;
+  position:relative;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+.delete:hover{
+  color:red;
+}
+/*----------HIDDEN FORM-----------*/
+.overlay{
+  position: absolute;
+  width: 360px;
+  height: 130px;
+  left:70px;
+  top:130px;
+}
+.form{
+  background-color: #08446f;
+  border: medium solid #999999;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.form__title{
+  font-size: 24px;
+  line-height: 10px;
+  float: center;
+}
+.button{
+  border: none;
+  background: none;
+  color: white;
+  font-size: 12px;
+}
+.add{
+  margin-left: 210px;
+  padding-right: 15px;
+  border-right: thin solid white;
+}
+.add:hover {
+  color: #99ccff;
+}
+.cancel{
+  padding-left: 10px;
+}
+.cancel:hover{
+  color: #99ccff;
+}
+/*----------STATES-----------*/
+.unchecked {
+  background-image: url("http://i.imgur.com/2OI2OnE.png");
+  background-repeat: no-repeat;
+}
+.checked {
+  background-image: url("http://i.imgur.com/o63dyfo.png");
+}
+.hidden{
+  display:none;
+}
